@@ -1,0 +1,27 @@
+#main{
+  width: 100%;
+  margin-top: 180px;
+}
+.ye{
+  
+  display: block;
+  margin: 0 auto;
+  padding-top: 30px;
+  background: orange;
+  width: 100px;
+  height: 65px;
+  border-radius: 20px 0px;
+}
+.sq{
+  padding: 20px;
+  width: 30%;
+  float: left;
+}
+p,h2 {
+  text-align: center;
+  color: white;
+}
+.pic{
+  display: block;
+  margin: 0 auto;
+}

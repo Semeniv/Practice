@@ -1,0 +1,13 @@
+hr {
+  border: none; /* Убираем границу для браузера Firefox */
+  color: aqua; /* Цвет линии для остальных браузеров */
+  background-color: aqua; /* Цвет линии для браузера Firefox и Opera */
+  height: 2px; /* Толщина линии */
+  width: 100px;
+ }
+ td {
+  text-align: center;
+ }
+ table {
+   margin-top: 200px;
+ }

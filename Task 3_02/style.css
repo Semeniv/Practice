@@ -1,0 +1,70 @@
+body{
+  margin: 0;
+}
+
+#verh{
+  background: #000;
+  width: 100%;
+  position: absolute;
+}
+.pic{
+  width: 22%;
+  float: left;
+  position: relative;
+  margin: 15px;
+}
+.pac{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+p{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+#main{ 
+  width: 100%;
+  margin: 195px 0;
+ 
+}
+
+#left{
+  background: #800000;
+  width: 15%;
+  height: 365px;
+  float: left;
+}
+#center{
+  background: #8B0000;
+  width: 70%;
+  height: 365px;
+  float: left;
+ 
+}
+#right{
+  background: #fcfafa;
+  width: 15%;
+  height: 365px;
+  float: left;
+  
+}
+#comp{
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+ a:visited{
+  color:orange ;
+ }
+ footer{
+  background:orangered;
+  width: 100%;
+ }
+ span{
+  color: rgb(255, 255, 255);
+ }
+ #news{
+  background:grey;
+  text-align: center;
+ }
