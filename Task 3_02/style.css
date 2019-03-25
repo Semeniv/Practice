@@ -62,9 +62,19 @@ p{
   width: 100%;
  }
  span{
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
  }
  #news{
   background:grey;
   text-align: center;
+ }
+ hr{
+  border: none;
+  color: grey; 
+  background-color: grey;
+  height: 2px;
+  width: 150px;
+ }
+ a:hover{
+  color:blue ;
  }
