@@ -2,6 +2,7 @@ html{
   font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
   height: 100%;
 }
+
 *{
   transition: all .1s ease-in;
 }
@@ -23,9 +24,9 @@ display: block;
 margin-left: 300px;
 }
 ul{
-  font-size: 0;
-  margin: auto;
-  padding: 0;
+  /* font-size: 0; */
+  margin: 10px;
+  padding: 5px;
   width: 99%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -48,11 +49,11 @@ span{
 }
 #Lisbon{
   background-color: #3399CC;
-  width: 50%;
+  width: 48%;
 }
 #Paris{
   background-color: #33CCCC;
-  width: 25%;
+  width: 24%;
 }
 #Belgrad{
   background-color: #C4A1B3;
@@ -60,15 +61,15 @@ span{
 }
 #Moscow{
   background-color: #E9BEBF;
-  width: 25%;
+  width: 24%;
 }
 #Aviv{
   background-color: #E2674A;
-  width: 25%;
+  width: 23.5%;
 }
 #Cair{
   background-color: #FFCC66;
-  width: 25%;
+  width: 24%;
 }
 #York{
   background-color: #99CC99;
@@ -76,11 +77,11 @@ span{
 }
 #Delhi{
   background-color: #669999;
-  width: 25%;
+  width: 24%;
 }
 #San{
   background-color: #CC6699;
-  width: 50%;
+  width: 48%;
 }
 #Tokyo{
   background-color: #339966;
@@ -88,7 +89,7 @@ span{
 }
 #Sydney{
   background-color: #666699;
-  width: 100%;
+  width: 98%;
 }
 ul:hover li:not(:hover){ 
   opacity: .5;
