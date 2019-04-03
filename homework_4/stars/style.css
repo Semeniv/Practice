@@ -1,0 +1,96 @@
+.rating {
+  float:left;
+}
+
+.rating:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+  clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+  float:right;
+  width:1em;
+  padding:0 .1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:500%;
+  line-height:1.2;
+  color:#ddd;
+  text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+  content: '★ ';
+}
+
+.rating > input:checked ~ label {
+  color: #f70;
+  text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: gold;
+  transform: rotate(360deg);
+  transition:all 1s;
+  text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #ea0;
+  text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+.rating > label:active {
+  position:relative;
+  top:2px;
+  left:2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .rate {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+    .rate:hover .star {
+      color: #06c;
+    }
+    .rate .star {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      color: #fff;
+      text-shadow:
+          0 1px #06c,
+          0 -1px #06c,
+          1px 0 #06c,
+          -1px 0 #06c;
+    }
+        .rate .star:before {
+          content: '\2605';
+        }
+    .rate .star:hover ~ .star {
+      color: #fff;
+    } */
+
+

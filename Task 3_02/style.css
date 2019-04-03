@@ -1,7 +1,6 @@
 body{
   margin: 0;
 }
-
 #verh{
   background: #000;
   width: 100%;
@@ -19,41 +18,36 @@ body{
   margin: 0 auto;
 }
 p{
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   text-align: center;
 }
 #main{ 
   width: 100%;
   margin: 195px 0;
- 
 }
-
 #left{
-  background: #800000;
+  background: #990606;
   width: 15%;
   height: 365px;
   float: left;
 }
 #center{
-  background: #8B0000;
+  background: #990606;
   width: 70%;
   height: 365px;
   float: left;
- 
 }
 #right{
   background: #fcfafa;
   width: 15%;
   height: 365px;
   float: left;
-  
 }
 #comp{
   width: 40%;
   display: block;
   margin: 0 auto;
 }
-
  a:visited{
   color:orange ;
  }
