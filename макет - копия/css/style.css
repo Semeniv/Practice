@@ -1,0 +1,164 @@
+
+
+	
+@keyframes changePosition {
+    from {
+        
+        transform: translateY(-600px);
+    }
+    to {
+        
+        transform: translateY(0px);
+    }
+}
+
+#logo {
+    animation-name: changePosition;
+	animation-duration: 2s;
+	/* animation-iteration-count: infinite; */
+}
+
+
+.container {
+    width: 100%; /* ширина блока-контейнера */
+    max-width: 960px; /* максимальная ширина контейнера */
+    margin: 0 auto; /* этот стиль центрирует контейнер */
+}
+.photo {
+    float: left; /* говорим элементам выстраиваться один за другим */
+    width: 33.333333%; /* устанавливаем ширину элемента */
+    padding: 3px; /* добавляем отступы с каждой стороны */
+    box-sizing: border-box; /* меняем способ вычисления ширины */
+}
+.photo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+	padding: 5px;
+background-color: #eee;
+box-sizing: border-box;
+}
+.photo a:hover {
+    opacity: 0.5;
+}
+.photo a {
+    display: block;
+	position: relative;
+}
+.photo a:after {
+    content: '';
+    background: transparent url(../img/icons/eye-icon.png) no-repeat center;
+    width: 52px;
+    height: 35px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+}
+.photo:hover > a:after {
+    visibility: visible;
+}
+.photo figcaption {
+    font-family:Segoe Print;
+	font-size: 30px;
+	font-weight: bold;
+	color: OrangeRed;
+    text-align: center;
+    margin-top: 20px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+#gallery {
+    margin-bottom: 10px;
+}
+#gallery:after { 
+   content: '';
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+.text{
+	margin-bottom: 10px;
+}
+#contact{
+	 width: 100%;
+	 float: left;
+	 margin-top: 50px;
+	 margin-bottom: 50px;
+	 padding-top:0px;
+	 
+}
+
+.container{
+	
+	float: left;
+	padding-bottom:64px;
+}
+
+	
+.bol{
+	font-weight: bolder;
+	color: white;
+}
+#rules{
+	width: 100%;
+	margin-top: 20px;
+}
+#car{
+	width: 60%;
+	margin: auto;
+}
+#seti{
+	width:50%;
+}
+@media only screen and (max-width: 670px) {
+	#main {margin-left: 0}
+	.photo figcaption {font-size:12px;}
+	#car{width: 100%; margin:0;}
+	.namber{font-size:14px; width: 50%; float:none; }
+	 .soc{ margin-left:0px; width: 100%;}
+	 #seti{width:100%;}
+	 #footer{font-size:14px;}
+	}
+	
+.namber{
+	
+	float:left;
+	margin:15px;
+}
+
+.icon{
+	float:left;
+	
+	
+}
+.soc{
+	float:left;
+	
+	margin:5px;
+}
+
+	
+#footer {text-align: center;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 55px;
+    float:left;
+	background: #222;
+}
+#gag{font-weight: bolder;
+	color: OrangeRed;
+}
+#photos{margin-top: 50px;
+	
+}
+p{line-height: 1.5;
+	
+}
