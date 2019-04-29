@@ -1,0 +1,14 @@
+.ba-container{
+  max-width: 1200px;
+  background: #FFFFFF;
+  display: grid;
+  /* gap: 20px; */
+}
+[class^="ba-grid"]{
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+ /* gap: 20px; */
+}
+img{
+  max-width: 100%;
+}

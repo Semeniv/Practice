@@ -1,51 +1,55 @@
-[class^="col-"]{
-background-color: blue;
+[class^="col-"] {
+  /* background-color: blue; */
 }
 
-h2{
-        font-size: 48px;
-        font-weight: 700;
-        font-family: "Roboto";
-        color: rgb(48, 48, 48);
-        line-height: 0.563;
-        text-align: left;
-        /* position: absolute; */
-        left: 145.937px;
-        top: 52.488px;
-        z-index: 78;
-      
-      
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Roboto";
+  color: rgb(48, 48, 48);
+  line-height: 0.563;
+  text-align: left;
 }
-
 
 #headphones {
-    /* position: absolute; */
-    left: 869px;
-    top: 189px;
-    width: 365px;
-    height: 491px;
-    z-index: 70;
-  }
+  margin: 15px 75px;
+}
 
-  #Black__White {
-    font-size: 150px;
-    font-family: "Raleway";
-    color: rgb(48, 48, 48);
-    text-transform: uppercase;
-    line-height: 1;
-    text-align: left;
-    /* position: absolute; */
-    left: 141.938px;
-    top: 334.412px;
-    z-index: 72;
-  }
-  
+#Black__White {
+  font-size: 130px;
+  font-family: "Raleway";
+  font-weight: 900;
+  color: rgb(48, 48, 48);
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0;
+  text-align: right;
+ 
+}
 
-  #slider {
-    /* position: absolute; */
-    box-align: center;
-    width: 52px;
-    height: 15px;
-    z-index: 69;
-  }
-  
+#slider {
+  position: absolute;
+  align: center;
+  width: 52px;
+  height: 15px;
+  margin: 0 auto;
+}
+h3{
+  text-align: right;
+  color:red;
+}
+p{
+  text-align: right;
+}
+.Featured{
+  background: green;
+}
+hr{
+  width: 100px;
+}
+#red_sq{
+  text-align: left;
+}
+.row_2 {
+  margin: 0 15px;
+}

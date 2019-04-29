@@ -1,0 +1,8 @@
+.ba-container{
+  max-width: 1200px;
+  background: #FFFFFF;
+}
+.ba-grid{
+  display: flex;
+
+}
