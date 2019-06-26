@@ -2,89 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Image Grid</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/style.css">
+	<meta charset="UTF-8">
+	<meta name="description" content="Start Template">
+	<meta name="author" content="Nastia">
+	<title>Daily form</title>
+
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 
 <body>
-    <div class="ba-container  ">
-        <h2>Image Grid</h2>
+	<div class="container">
+		<form action="#" class="login">
+			<div class="community">
+				<p class="community__description">Create your free account</p>
+				<p class="community__description--small">Come and join our cool and amazing community, fill in your
+					details
+					to get started. Already have an account? <a href="#" class="community__link">Log in.</a></p>
+			</div>
+			<div class="field field-name">
 
-        <div class="ba-grid">
-            <div class="ba_col-6">
-                <img src="https://via.placeholder.com/600x150" alt="">
-            </div>
-            <div class="ba_col-6">
-                <img src="https://via.placeholder.com/600x150" alt="">
-            </div>
-        </div>
+				<input type="text" class="field__item field__item--half field__item--half__FirsName" placeholder="First name">
+				<input type="text" class="field__item field__item--half field__item--half__LastName" placeholder="Last name">
+			</div>
+			<div class="field field-email">
+				<lable class="field__lable" for="email">
+				</lable>
+				<input type="email" name="email" class="field__item field__item--email" id="email" placeholder="Email address" required>
+			</div>
+			<div class="field field-password">
+				<lable class="field__lable" for="password">
+				</lable>
+				<input type="password" name="password" class="field__item field__item--password" id="password"
+					placeholder="Password">
+			</div>
+			<div class="field field-submit">
+				<button type="submit" class="button">Sign up for free</button>
+				<ul class="login__links">
+					<li>By clicking on “Sign up for free”, you agree to the
+						<a href="#" class="login__link">Terms of Service</a> and the
+						<a href="#" class="login__link">Privacy Policy</a></li>
+				</ul>
+			</div>
 
-
-        <div class="ba-grid">
-            <div class="ba_col-6">
-                <img src="https://via.placeholder.com/600x320" alt="">
-            </div>
-
-            <div class="ba_col-6">
-                <div class="ba-grid">
-                    <div class="ba_col-3">
-                        <img src="https://via.placeholder.com/200x165" alt="">
-                    </div>
-                    <div class="ba_col-3">
-                        <img src="https://via.placeholder.com/200x165" alt="">
-                    </div>
-                    <div class="ba_col-3">
-                        <img src="https://via.placeholder.com/200x165" alt="">
-                    </div>
-                </div>
-                <div class="ba-grid">
-                    <div class="ba_col-3">
-                        <img src="https://via.placeholder.com/300x150" alt="">
-                    </div>
-                    <div class="ba_col-3">
-                        <img src="https://via.placeholder.com/300x150" alt="">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="ba-grid">
-            <div class="ba_col-4">
-                <img src="https://via.placeholder.com/400x185" alt="">
-            </div>
-            <div class="ba_col-4">
-                <img src="https://via.placeholder.com/400x185" alt="">
-            </div>
-            <div class="ba_col-2">
-                <img src="https://via.placeholder.com/200x195" alt="">
-            </div>
-            <div class="ba_col-2">
-                <img src="https://via.placeholder.com/200x195" alt="">
-            </div>
-        </div>
+		</form>
+	</div>
 
 
-        <div class="ba-grid">
-            <div class="ba_col-2">
-                <img src="https://via.placeholder.com/200x145" alt="">
-            </div>
-            <div class="ba_col-6">
-                <img src="https://via.placeholder.com/600x135" alt="">
-            </div>
-            <div class="ba_col-4">
-                <img src="https://via.placeholder.com/400x135" alt="">
-            </div>
-        </div>
-
-
-    </div>
+	<!-- LiveReload Script -->
+	<script>
+		document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+			':35729/livereload.js?snipver=1"></' + 'script>')
+	</script>
 </body>
 
 </html>

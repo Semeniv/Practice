@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+svg{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+svg .draw{
+  stroke: rgb(202, 32, 32);
+  stroke-width: 1px;
+  fill: transparent;
+  stroke-dasharray: 320;
+  stroke-dashoffset: 320;
+  animation: animate 8s forwards infinite;
+  padding-left: 3px;
+}
+@keyframes animate{
+  to{
+      stroke-dashoffset: 0;
+  }
+}
