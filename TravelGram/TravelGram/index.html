@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TravelGram</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+<!-- link font awesome -->
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+
+
+<!-- sticky menu -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+                $('.header-list').addClass('sticky');
+            } else {
+                $('.header-list').removeClass('sticky');
+            }
+        })
+    </script>
+
+
+
+</head>
+
+<body>
+    <header class="header">
+
+        <div id="video-container">
+            <video preload="auto" autoplay muted type="video/mp4" src="Fog.mp4" loop></video>
+            <div class="contents">
+
+                <!-- HEADER TOP BOX -->
+                <div class="header-top ">
+                    <form name="search" class="form-search" action="#">
+                        <label><input type="text" name="search" id="" placeholder="Search and hit enter"><i
+                                class="fas fa-search"></i></label>
+                    </form>
+                    <h1 class="header-logo">
+                        <a href="#"><img src="./img/logo.png" alt="Travelgram "></a>
+                    </h1>
+                    <form action="#" class="form-subscribe">
+                        <button class="button-subscribe">subscribe</button>
+                        <div class="decor"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <!-- HEADER BOTTOM BOX-->
+        <div class="header-bottom">
+            <nav class="nav">
+                <ul class="header-list">
+                    <li class="header-list__item"><a href="#" class="header-list__link">home</a></li>
+                    <li class="header-list__item"><a href="#" class="header-list__link">featured</a></li>
+                    <li class="header-list__item"><a href="#" class="header-list__link">blogs</a></li>
+                    <li class="header-list__item"><a href="#" class="header-list__link">gallery</a></li>
+                    <li class="header-list__item"><a href="#" class="header-list__link">categories</a></li>
+                    <li class="header-list__item"><a href="#" class="header-list__link">contact</a></li>
+                </ul>
+            </nav>
+
+
+
+            <!-- <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="#"><i
+                            class="fab fa-facebook-f"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="social-list__item"><a class="social-list__link" href="#"><i
+                            class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul> -->
+
+
+
+            <div class="circle">
+                <div class="share">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </div>
+
+                <ul>
+                    <li><a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                            class="social-list__link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+
+                    <li><a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"
+                            class="social-list__link"><i
+                                class="fa fa-twitter" aria-hidden="true"></i></a></li>
+
+                    <li><a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                            class="social-list__link"><i
+                                class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+                    <li><a href="http://www.google.com" target="_blank" rel="noopener noreferrer"
+                            class="social-list__link"><i
+                                class="fa fa-google" aria-hidden="true"></i></a></li>
+
+
+            
+                    
+
+
+
+                </ul>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+        <section class="slider">
+            <div class="slider-box">
+                <div class="box-top">
+                    <h2 class="box-top__title">Travelling</h2>
+                    <p class="box-top__desc">sports that never ends</p>
+                </div>
+                <div class="box-bottom">
+                    <div class="box-bottom__label">featured blog</div>
+                    <div class="box-bottom-content">
+                        <div class="control">
+                            <div class="control-up"><i class="fas fa-angle-up"></i></div>
+                            <div class="control-down control-active"><i class="fas fa-angle-down"></i></div>
+                        </div>
+                        <div class="content">
+                            <h2 class="content-title">lost in space</h2>
+                            <p class="content-text">Some modern factory robots are "autonomous" within the strict
+                                confines of their direct environment. It may not be
+                                that every degree of freedom exists</p>
+                            <div class="content-button">explore now</div>
+                            <div class="content-count">
+                                <i class="counter"></i>
+                                <i class="counter counter-active"></i>
+                                <i class="counter"></i>
+                                <i class="counter"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MAIN SECTION  -->
+        <section class="main-section">
+            <aside class="main-section-left">
+                <!-- where i -->
+                <div class="where-ami shadow">
+                    <div class="box-title">where am i</div>
+                    <img class="section-img" src="./img/map.jpg" alt="Google map">
+                </div>
+                <!-- about me -->
+                <div class="about-me shadow">
+                    <div class="box-title">about me</div>
+                    <p class="about-me__text">Hi! I'm a Travellerr based on Assam
+                        I love editing photos, clicking photos, creating responsive websites alongwith high quality
+                        graphics.</p>
+                    <p class="follow-me__title">Follow me</p>
+                    <ul class="social-list">
+                        <li class="social-list__item"><a class="social-list__link" href="#"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li class="social-list__item"><a class="social-list__link" href="#"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li class="social-list__item"><a class="social-list__link" href="#"><i
+                                    class="fab fa-google-plus-g"></i></a></li>
+                        <li class="social-list__item"><a class="social-list__link" href="#"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li class="social-list__item"><a class="social-list__link" href="#"><i
+                                    class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <img src="./img/i.jpg" alt="That is i" class="section-img">
+                </div>
+                <!-- newsletter -->
+                <div class="newsletter">
+                    <form action="#">
+                        <div class="box-title">newsletter</div>
+                        <input type="text" placeholder="your email adress">
+                        <button class="button-sign-up">sign up</button>
+                    </form>
+                </div>
+                <!-- categories -->
+                <div class="categories shadow">
+                    <div class="box-title">categories</div>
+                    <ul class="categories-list">
+                        <li class="categories-list__item"><a href="#" class="categories-list__link">Nature</a></li>
+                        <li class="categories-list__item"><a href="#" class="categories-list__link">Nightlife</a></li>
+                        <li class="categories-list__item"><a href="#" class="categories-list__link">Lifestyle</a></li>
+                        <li class="categories-list__item"><a href="#" class="categories-list__link">Food</a></li>
+                    </ul>
+                </div>
+                <!-- recent post -->
+                <div class="recent-post shadow">
+                    <div class="box-title">recent post</div>
+                    <ul class="recent-post-list">
+                        <li class="recent-post-list__item">
+                            <div class="left">
+                                <img src="./img/recent-1.jpg" alt="Recent post"
+                                    class="recent-post-list__img section-img">
+                            </div>
+                            <div class="right">
+                                <a href="#" class="recent-post-list__link">Travelling with your buddies.</a><br>
+                                <span class="post-date">July 25, 2016</span>
+                            </div>
+                        </li>
+                        <li class="recent-post-list__item">
+                            <div class="left">
+                                <img src="./img/recent-2.jpg" alt="Recent post"
+                                    class="recent-post-list__img section-img">
+                            </div>
+                            <div class="right">
+                                <a href="#" class="recent-post-list__link">Travelling with your buddies.</a><br>
+                                <span class="post-date">July 25, 2016</span>
+                            </div>
+                        </li>
+                        <li class="recent-post-list__item">
+                            <div class="left">
+                                <img src="./img/recent-3.jpg" alt="Recent post"
+                                    class="recent-post-list__img section-img">
+                            </div>
+                            <div class="right">
+                                <a href="#" class="recent-post-list__link">Travelling with your buddies.</a><br>
+                                <span class="post-date">July 25, 2016</span>
+                            </div>
+                        </li>
+                        <li class="recent-post-list__item">
+                            <div class="left">
+                                <img src="./img/recent-4.jpg" alt="Recent post"
+                                    class="recent-post-list__img section-img">
+                            </div>
+                            <div class="right">
+                                <a href="#" class="recent-post-list__link">Travelling with your buddies.</a><br>
+                                <span class="post-date">July 25, 2016</span>
+                            </div>
+                        </li>
+                        <li class="recent-post-list__item">
+                            <div class="left">
+                                <img src="./img/recent-5.jpg" alt="Recent post"
+                                    class="recent-post-list__img section-img">
+                            </div>
+                            <div class="right">
+                                <a href="#" class="recent-post-list__link">Travelling with your buddies.</a><br>
+                                <span class="post-date">July 25, 2016</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- tags -->
+                <div class="tags shadow">
+                    <div class="box-title">tags</div>
+                    <div class="tags__item">lifestyle</div>
+                    <div class="tags__item">travel</div>
+                    <div class="tags__item">nature</div>
+                    <div class="tags__item">lost</div>
+                    <div class="tags__item">tracking</div>
+                    <div class="tags__item">lifestyleing</div>
+                </div>
+                <!-- contact me -->
+                <div class="contact-me shadow">
+                    <div class="box-title">contact me</div>
+                    <form class="contact-form" action="#">
+                        <input type="text" name="" id="" placeholder="Your name">
+                        <input type="email" name="" id="" placeholder="Your email">
+                        <textarea name="contact" id="" rows=8" noresize placeholder="Your message"></textarea>
+                        <input type="submit" name="submit" id="" value="Submit">
+                    </form>
+                </div>
+            </aside>
+            <!-- SECTION RIGHT -->
+            <section class="main-section-right">
+                <div class="content-box box">
+                    <!-- left area -->
+                    <div class="content-box__left-area">
+                        <h2 class="content-label">night life</h2>
+                        <h3 class="content-article-title">Written in the stars, Million miles away!</h3>
+                        <p class="content-desc">A high degree of autonomy is particularly desirable in fields such as
+                            space exploration...</p>
+                        <div class="content-more">
+                            <a href="#" class="content-more__read-more">read more</a>
+                            <span class="content-more__share">share</span>
+                            <a class="social-list__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <a class="social-list__link" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <a class="social-list__link" href="#"><i class="fab fa-instagram"></i></a></li>
+                        </div>
+                    </div>
+                    <!-- right area -->
+                    <div class="content-box__right-area">
+                        <div class="content-image-box">
+                            <img src="./img/absolute-block.jpg" alt="Article title"
+                                class="content-image-box__img section-img">
+                            <div class="content-image-box__hidden">
+                                <a class="hiden-box__link" href="#">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- reverse -->
+                <div class="content-box box">
+                    <!-- left area -->
+                    <div class="content-box__left-area second">
+                        <h2 class="content-label">night life</h2>
+                        <h3 class="content-article-title">Written in the stars, Million miles away!</h3>
+                        <p class="content-desc">A high degree of autonomy is particularly desirable in fields such as
+                            space exploration...</p>
+                        <div class="content-more">
+                            <a href="#" class="content-more__read-more">read more</a>
+                            <span class="content-more__share">share</span>
+                            <a class="social-list__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <a class="social-list__link" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <a class="social-list__link" href="#"><i class="fab fa-instagram"></i></a></li>
+                        </div>
+                    </div>
+                    <!-- right area -->
+                    <div class="content-box__right-area first">
+                        <div class="content-image-box">
+                            <img src="./img/absolute-block2.jpg" alt="Article title"
+                                class="content-image-box__img section-img">
+                            <div class="content-image-box__hidden">
+                                <a class="hiden-box__link" href="#">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content box wide image -->
+                <div class="content-box-wide box">
+                    <div class="content-box-wide__img">
+                        <img src="./img/road.jpg" alt="Road" class="section-img">
+                        <div class="content-image-box__hidden">
+                            <a class="hiden-box__link" href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="content-box-wide__flex">
+                        <h2 class="content-label">night life</h2>
+                        <h3 class="content-article-title">Written in the stars, Million miles away!</h3>
+                        <p class="content-desc">A high degree of autonomy is particularly desirable in fields such as
+                            space exploration...</p>
+                        <div class="content-more">
+                            <a href="#" class="content-more__read-more">read more</a>
+                            <span class="content-more__share">share</span>
+                            <a class="social-list__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <a class="social-list__link" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <a class="social-list__link" href="#"><i class="fab fa-instagram"></i></a></li>
+                        </div>
+                    </div>
+                </div>
+                <!-- content box twin -->
+                <div class="content-box-twin box">
+                    <div>
+                        <div class="content-box-wide__img twin-img">
+                            <img src="./img/read-more-1.jpg" alt="Road" class="section-img">
+                            <div class="content-image-box__hidden">
+                                <a class="hiden-box__link" href="#">read more</a>
+                            </div>
+                        </div>
+                        <div class="content-box-wide__flex">
+                            <h2 class="content-label">night life</h2>
+                            <h3 class="content-article-title">Written in the stars, Million miles away!</h3>
+                            <p class="content-desc">A high degree of autonomy is particularly desirable in fields such
+                                as space exploration...</p>
+                            <div class="content-more">
+                                <a href="#" class="content-more__read-more">read more</a>
+                                <span class="content-more__share">share</span>
+                                <a class="social-list__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <a class="social-list__link" href="#"><i class="fab fa-twitter"></i></a></li>
+                                <a class="social-list__link" href="#"><i class="fab fa-instagram"></i></a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content-box-wide__img twin-img">
+                            <img src="./img/read-more-2.jpg" alt="Road" class="section-img">
+                            <div class="content-image-box__hidden">
+                                <a class="hiden-box__link" href="#">read more</a>
+                            </div>
+                        </div>
+                        <div class="content-box-wide__flex">
+                            <h2 class="content-label">night life</h2>
+                            <h3 class="content-article-title">Written in the stars, Million miles away!</h3>
+                            <p class="content-desc">A high degree of autonomy is particularly desirable in fields such
+                                as space exploration...</p>
+                            <div class="content-more">
+                                <a href="#" class="content-more__read-more">read more</a>
+                                <span class="content-more__share">share</span>
+                                <a class="social-list__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <a class="social-list__link" href="#"><i class="fab fa-twitter"></i></a></li>
+                                <a class="social-list__link" href="#"><i class="fab fa-instagram"></i></a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content box wide image -->
+                <div class="content-box-wide box">
+                    <div class="content-box-wide__img">
+                        <img src="./img/lifestyle.jpg" alt="Road" class="section-img">
+                        <div class="content-image-box__hidden">
+                            <a class="hiden-box__link" href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="content-box-wide__flex">
+                        <h2 class="content-label">night life</h2>
+                        <h3 class="content-article-title">Written in the stars, Million miles away!</h3>
+                        <p class="content-desc">A high degree of autonomy is particularly desirable in fields such as
+                            space exploration...</p>
+                        <div class="content-more">
+                            <a href="#" class="content-more__read-more">read more</a>
+                            <span class="content-more__share">share</span>
+                            <a class="social-list__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <a class="social-list__link" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <a class="social-list__link" href="#"><i class="fab fa-instagram"></i></a></li>
+                        </div>
+                    </div>
+                </div>
+                <!-- content box wide image -->
+                <div class="content-box-wide box">
+                    <div class="content-box-wide__img">
+                        <img src="./img/road.jpg" alt="Road" class="section-img">
+                        <div class="content-image-box__hidden">
+                            <a class="hiden-box__link" href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="content-box-wide__flex">
+                        <h2 class="content-label">night life</h2>
+                        <h3 class="content-article-title">Written in the stars, Million miles away!</h3>
+                        <p class="content-desc">A high degree of autonomy is particularly desirable in fields such as
+                            space exploration...</p>
+                        <div class="content-more">
+                            <a href="#" class="content-more__read-more">read more</a>
+                            <span class="content-more__share">share</span>
+                            <a class="social-list__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <a class="social-list__link" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <a class="social-list__link" href="#"><i class="fab fa-instagram"></i></a></li>
+                        </div>
+                    </div>
+                </div>
+                <!-- pagination -->
+                <div class="content-box ">
+                    <div class="pagination">
+                        <div class="pagination-prev arr">
+                            <!-- <i class="fas fa-arrow-left"></i> -->
+                            <a href="#" data-text="<Prev">Prev</a>
+                        </div>
+                        <div class="pagination-number">
+                            <a href="#" class="pagination-link pagination-link__active">1</a>
+                            <a href="#" class="pagination-link">2</a>
+                            <a href="#" class="pagination-link">3</a>
+                        </div>
+                        <div class="pagination-next arr">
+                            <a href="#" data-text="Next>">Next</a>
+                            <!-- <i class="fas fa-arrow-right"></i> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- gallery -->
+            <section class="gallery-box">
+                <div class="gallery shadow">
+                    <div class="gallery-item"><img class="section-img" src="./img/output-32.jpg" alt="Gallery"></div>
+                    <div class="gallery-item"><img class="section-img" src="./img/output-34.jpg" alt="Gallery"></div>
+                    <div class="gallery-item"><img class="section-img" src="./img/output-36.jpg" alt="Gallery"></div>
+                    <div class="gallery-item"><img class="section-img" src="./img/output-40.jpg" alt="Gallery"></div>
+                </div>
+                <div class="gallery shadow">
+                    <div class="gallery-item"><img class="section-img" src="./img/output-42.jpg" alt="Gallery"></div>
+                    <div class="gallery-item"><img class="section-img" src="./img/output-30.jpg" alt="Gallery"></div>
+                    <div class="gallery-item"><img class="section-img" src="./img/output-38.jpg" alt="Gallery"></div>
+                    <div class="gallery-item"><img class="section-img" src="./img/output-27.jpg" alt="Gallery"></div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-social">
+            <ul class="footer-social__list">
+                <li class="footer-social-list__item"><a class="footer-social-list__link" href="#"><i
+                            class="fab fa-facebook-f"></i>Facebook</a></li>
+                <li class="footer-social-list__item"><a class="footer-social-list__link" href="#"><i
+                            class="fab fa-twitter"></i>Twitter</a></li>
+                <li class="footer-social-list__item"><a class="footer-social-list__link" href="#"><i
+                            class="fab fa-google-plus-g"></i>Google +</a></li>
+                <li class="footer-social-list__item"><a class="footer-social-list__link" href="#"><i
+                            class="fab fa-linkedin-in"></i>LinkedIn</a></li>
+                <li class="footer-social-list__item"><a class="footer-social-list__link" href="#"><i
+                            class="fab fa-instagram"></i>Instagram</a></li>
+                <li class="footer-social-list__item"><a class="footer-social-list__link" href="#"><i
+                            class="fab fa-vimeo-v"></i>Vimeo</a></li>
+                <li class="footer-social-list__item"><a class="footer-social-list__link" href="#"><i
+                            class="fab fa-youtube"></i>YouTube</a></li>
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <div class="footer-logo">
+                <a href="#"><img src="./img/footer-logo.png" alt="Travelgram "></a>
+            </div>
+            <!-- <nav class="nav"> -->
+            <!-- reus header list -->
+            <!-- <ul class="header-list">
+                    <li class="header-list__item"><a href="#" class="header-list__link">home</a></li>
+                    <li class="header-list__item"><a href="#" class="header-list__link">featured</a></li>
+                    <li class="header-list__item"><a href="#" class="header-list__link">blogs</a></li>
+                    <li class="header-list__item"><a href="#" class="header-list__link">gallery</a></li>
+                    <li class="header-list__item"><a href="#" class="header-list__link">categories</a></li>
+                    <li class="header-list__item"><a href="#" class="header-list__link">contact</a></li>
+                </ul>
+            </nav> -->
+        </div>
+        <div class="footer-copy">
+            <p class="footer-copy__author">Travelgram Designed By Me 8)</p>
+        </div>
+    </footer>
+
+
+    <script>
+        $(".slider").ripples({
+            resolution: 200,
+            perturbance: 0.04,
+        });
+    </script>
+
+
+</body>
+
+</html>
